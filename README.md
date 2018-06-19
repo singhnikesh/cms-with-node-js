@@ -1,2 +1,2 @@
-# cms-with-node-js
+# CMS With Node Js
 Content Management System with node js, ejs template &amp; MSSQL database
