@@ -1,0 +1,69 @@
+﻿<div class="top-header">
+        <div class="container">
+            <div class="top-header-main">
+                <div class="col-md-8 header-address">
+                    <ul>
+                        <li><span class="phone"> </span> <h6>(220) 280-31589</h6></li>
+                        <li><span class="email"> </span><h6><a href="mailto:info@example.com">Youremail@gmail.com</a></h6></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 top-social">
+                    <ul>
+                        <li><a href="#"><span class="fb"> </span></a></li>
+                        <li><a href="#"><span class="tw"> </span></a></li>
+                        <li><a href="#"><span class="in"> </span></a></li>
+                        <li><a href="#"><span class="gmail"> </span></a></li>
+                    </ul>
+                </div>
+                
+              <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+        <!-- NAVBAR
+            ================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">	
+    
+                <div class="navbar-wrapper">
+                  <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                         <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <div class="logo">
+                                   <h1><a class="navbar-brand" href="/">Allied</a></h1>
+                              </div>
+                          </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                        <nav class="cl-effect-16" id="cl-effect-16">
+                          <ul class="nav navbar-nav">
+                           <li><a class="<%= pageUrl == '/' ? 'active' : '' %>" href="/" data-hover="Home">Home</a></li>
+                            <li><a class="<%= pageUrl == '/about-us.html' ? 'active' : '' %>" href="/about-us.html" data-hover="About">About</a></li>
+                            <li><a class="<%= pageUrl == '/online-course-facilities.html' ? 'active' : '' %>" href="/online-course-facilities.html" data-hover="Online Course Facilities">Online Course Facilities</a></li>
+                            <li><a class="<%= pageUrl == '/book-library.html' ? 'active' : '' %>" href="/book-library.html" data-hover="Modern Book Library">Modern Book Library</a></li>
+                            <li><a class="<%= pageUrl == '/industrial-leader.html' ? 'active' : '' %>" href="/industrial-leader.html" data-hover="Be Industrial Leader">Be Industrial Leader</a></li>
+                            <li><a class="<%= pageUrl == '/contact.html' ? 'active' : '' %>" href="/contact.html" data-hover="Contact">Contact</a></li>						
+                            <% if(isAuthenticated) { %>
+                                <li><a class="" href="/logout.html" data-hover="Logout">Logout</a> </li>
+                            <% } else { %>
+                                <li><a class="<%= pageUrl == '/login.html' ? 'active' : '' %>" href="/login.html" data-hover="Login">Login</a> </li>
+                            <% } %>
+                          </ul>
+                        </nav>
+    
+                        </div>
+                        <div class="clearfix"> </div>
+                         </nav>
+                      </div>
+                       <div class="clearfix"> </div>
+                </div>
+         </div>
+    </div>
+    <!--header end here-->    

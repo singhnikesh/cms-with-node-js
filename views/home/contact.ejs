@@ -1,0 +1,57 @@
+<% layout('../shared/layoutinner') %>
+<div class="contact">
+        <div class="container">
+            <div class="contact-agile">
+                <div class="contact-top">
+                    <h2>Contact</h2>
+                    <p> </p>
+                </div>
+                <div class="contact-bottom">
+                    <div class="col-md-4 contact-left">
+                        <h3>Contact info</h3>
+                        <p class="con-para">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                        <div class="contact-add">
+                                <p>consectetur adipiscing</p>
+                                <p>ncididunt ut 795-4378</p>
+                                <p>(586)769-9037</p>
+                            </div>
+                            <ul class="face">
+                                <li class="active"><a href="#">facebook </a><span>/</span></li>
+                                <li><a href="#">twitter </a><span>/</span></li>
+                                <li><a href="#">linkedin </a><span>/</span></li>
+                                <li><a href="#">dribbble</a></li>
+                            </ul>
+    
+                    </div>
+                    <div class="col-md-8 contact-right">
+
+                            <div class="form-header">
+                                <% if (Object.keys(errors).length === 0) { %>
+                                    <h2>Send us a message</h2>
+                                <% } else { %>
+                                <h2 class="errors-heading">Oops, please correct the following:</h2>
+                                <ul class="errors-list">
+                                    <% Object.values(errors).forEach(error => { %>
+                                        <li><%= error.msg %></li>
+                                    <% }) %>
+                                </ul>
+                                <% } %>
+                            </div>
+
+                        <form name="contact-form" id="contact-form" action="/contact.html" method="post">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            <input type="text" name="Name" placeholder="Name" value="<%= data.Name %>">
+                            <input type="text" class="email" name="Email" placeholder="Email" value="<%= data.Email %>">
+                            <input type="text" class="in-phone" name="Phone" placeholder="Phone" value="<%= data.Phone %>">
+                            <textarea name="Message" placeholder="Message" ><%= data.Message %></textarea>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281066703!2d-0.24168144921176335!3d51.5287718408761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1465382361097"> </iframe>
+                </div>
+            </div>
+        </div>
+    </div>

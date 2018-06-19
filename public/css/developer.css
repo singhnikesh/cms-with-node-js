@@ -1,0 +1,9 @@
+.validation-summary-errors > ul {
+    color: #AC004A;
+    font-weight: bold;
+    list-style: none outside none;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+}

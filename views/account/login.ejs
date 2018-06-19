@@ -1,0 +1,39 @@
+<% layout('../shared/layoutinner') %>
+<div class="contact">
+        <div class="container">
+            <div class="contact-agile">
+                <div class="contact-top">
+                    <h2>Login</h2>
+                </div>
+                <div class="contact-bottom">                    
+                    <div class="col-md-6 col-md-offset-3 contact-right">
+
+                        <div class="form-header">
+                            <% if (Object.keys(errors).length > 0) { %>
+                                <div class="validation-summary-errors">
+                                    <ul>
+                                        <% Object.values(errors).forEach(error => { %>
+                                            <li><%= error.msg %></li>
+                                        <% }) %>
+                                    </ul>
+                                </div>                                
+                            <% } %>
+                        </div>
+                            
+                        <form name="login-form" id="login-form" action="/login.html" method="post">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            <input style="width: 100%;" type="text" name="Username" placeholder="Username/Email" value="<%= data.Username %>">
+                            <input style="width: 100%;" type="password" name="Password" placeholder="******" value="<%= data.Password %>">
+                            <div class="text-right">
+                                <input type="submit" value="Login">
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% stylesheet('/css/developer.css') -%>

@@ -1,0 +1,39 @@
+﻿<!--news lettter start here-->
+    <div class="newsletter">    
+        <div class="container">
+            <div class="newsletter-wthree">
+                <h3>Sign up For Newsletter</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Your Mail" name="Your Mail" required="">
+                    <input type="submit"  value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--news letter end here-->
+    <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                <ul class="ftr-icons">
+                    <li><a class="fa" href="#"> </a></li>
+                    <li><a class="tw" href="#"> </a></li>
+                    <li><a class="g" href="#"> </a></li>
+                </ul>
+                 <p>&copy; 2016 Allied. All Rights Reserved | Design by  <a href="https://w3layouts.com/" target="_blank">W3 Layouts</a> | 
+                    <% if(isAuthenticated) { %>
+                        <a href="/logout.html">Logout</a> 
+                    <% } else { %>
+                        <a href="/login.html">Login</a> 
+                    <% } %>
+                  </p>
+
+                  <p class="hidden"> 
+                      <span> Username: <%= currentUserName %> </span> | <span> Userid: <%= currentUserId %> </span> | <span> Rolename: <%= currentRoleName %> </span>
+                  </p>
+    
+            </div>
+        </div>
+    </div>
+    <!--copy rights end here-->

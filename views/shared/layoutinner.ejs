@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title> <%= metatitle %> </title>
+  <meta name="keywords" content="<%= keyword %>" />
+  <meta name="description" content="<%= description %>" />
+
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+  <!--Google Fonts-->
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <!--google fonts-->
+  
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <!--header start here-->
+  <%- include ../shared/header -%>
+  <!--header end here-->
+
+  <!--Body Part start here-->
+  <%- body -%>
+  <!-- Body ends here -->
+
+  <!-- Foooter Starts Here -->
+  <%- include ../shared/footer -%>
+  <!-- Footer Ends here -->
+
+  <%- scripts -%> 
+  <%- stylesheets -%>
+  <%- blocks.scriptsTag %>
+
+</body>
+</html>
